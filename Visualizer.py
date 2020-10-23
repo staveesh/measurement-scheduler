@@ -4,14 +4,14 @@ from SubGraph import SubGraph
 from ConflictGraph import ConflictGraph
 
 
-class GraphVisualizer:
+class Visualizer:
 
     def __init__(self, scalefactor=0.05, node_size=15000, alpha=0.5):
         self.scalefactor = scalefactor
         self.node_size = node_size
         self.alpha = alpha
 
-    def visualize(self, graph):
+    def visualize_graph(self, graph):
         G = nx.Graph()
 
         if type(graph) == SubGraph:
